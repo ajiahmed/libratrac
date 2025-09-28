@@ -3,10 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { motion } from "framer-motion";
-import { Bell, BookOpen, Users, AlertTriangle } from "lucide-react"
-
-
-
+import { Bell, BookOpen, Users, AlertTriangle } from "lucide-react";
 
 export default function DolLibraryApp() {
   const [books, setBooks] = useState([
@@ -58,4 +55,15 @@ export default function DolLibraryApp() {
       borrowedDate: "2025-09-07",
       dueDate: "2025-09-18",
       returnedDate: null,
-      overdue: fals
+      overdue: false,
+    },
+  ]);
+
+  // You can continue your component logic here...
+  return (
+    <div>
+      <h1>DOL Library App</h1>
+      {/* TODO: Render UI for books */}
+    </div>
+  );
+}
